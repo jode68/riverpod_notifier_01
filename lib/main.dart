@@ -19,10 +19,11 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      theme: Themes.appTheme(true),
       debugShowCheckedModeBanner: false,
       initialRoute: Routes.homePage,
       getPages: Routes.routes,
+      theme: Themes.appThemeLight(),
+      darkTheme: Themes.appThemeDark(),
     );
   }
 }

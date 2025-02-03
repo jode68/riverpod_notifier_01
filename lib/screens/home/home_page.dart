@@ -16,11 +16,10 @@ class HomePage extends ConsumerWidget {
         actions: [
           IconButton(
               onPressed: () => addEditButton(ref),
-              icon: const Icon(Icons.add_circle_outlined,
-                  color: Colors.deepPurpleAccent)),
+              icon: Icon(Icons.add_circle_outlined)),
           IconButton(
               onPressed: () => removeAllButton(ref),
-              icon: const Icon(Icons.delete, color: Colors.red)),
+              icon: Icon(Icons.delete_forever_outlined)),
         ],
       ),
       body: ListView.builder(

@@ -24,6 +24,7 @@ Future<void> addEditButton(WidgetRef ref, {String id = ''}) async {
             hintText: 'Enter name',
           ),
         ),
+        SizedBox(height: 8),
         TextField(
           controller: ref.read(noteProvider.notifier).descController,
           autocorrect: false,
@@ -31,6 +32,7 @@ Future<void> addEditButton(WidgetRef ref, {String id = ''}) async {
             hintText: 'Enter description',
           ),
         ),
+        SizedBox(height: 8),
         ElevatedButton(
           onPressed: () {
             if (id == '') {
