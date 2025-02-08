@@ -13,7 +13,7 @@ Future<void> addEditButton(WidgetRef ref, {String id = ''}) async {
     ref.read(noteProvider.notifier).descController.text = note.desc;
   }
   Get.defaultDialog(
-    title: 'Add Note',
+    title: id == '' ? 'Add Note' : 'Edit Note',
     content: Column(
       children: [
         TextField(
